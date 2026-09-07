@@ -5,10 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="assets/fonts/outfit/Outfit-VariableFont_wght.ttf">
-  <link rel="stylesheet" href="assets/fonts/young-serif/YoungSerif-Regular.ttf">
+  <link rel="stylesheet" href="assets/style/style.css">
   <title>Frontend Mentor | Recipe page</title>
 
   <style>
@@ -24,21 +25,22 @@
 </head>
 
 <body>
-  <article class="recipe-card">
+  <main>
+    <article class="recipe-card recipe-card--inner">
     <div class="recipe-card__cover--inner">
-      <img src="assets/images/image-omelette.jpeg" class="recipe-card__cover" alt="">
+      <img src="assets/images/image-omelette.jpeg" class="recipe-card__cover" alt="recipe cover">
     </div>
     <h1 class="recipe-card__title--large">Simple Omelette Recipe</h1>
     <p class="recipe-card__text">An easy and quick dish, perfect for any meal. This classic omelette combines beaten
       eggs cooked
       to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
     <section class="recipe-card__intro">
-      <div class="recipe-card__prepare-list">
+      <div class="recipe-card__prepare-list recipe-card__prepare-list--inner">
         <h3 class="recipe-card__title--xs">Preparation time</h3>
         <ul class="prepare-list">
-          <li class="prepare-list__item">Total: Approximately 10 minutes</li>
-          <li class="prepare-list__item">Preparation: 5 minutes</li>
-          <li class="prepare-list__item">Cooking: 5 minutes</li>
+          <li class="prepare-list__item"><span class="text--strong">Total:</span> Approximately 10 minutes</li>
+          <li class="prepare-list__item"><span class="text--strong">Preparation:</span> 5 minutes</li>
+          <li class="prepare-list__item"><span class="text--strong">Cooking:</span> 5 minutes</li>
         </ul>
       </div>
       <div class="recipe-card__ingredients-list">
@@ -55,44 +57,44 @@
     <section class="recipe-card__insrtuctions-list">
       <h2 class="recipe-card__title--s">Instructions</h2>
       <ol class="insrtuctions-list">
-        <li class="instructions-list__item">Beat the eggs: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed.
+        <li class="instructions-list__item"><span class="text--strong">Beat the eggs:</span> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed.
           You can add a tablespoon of water or milk for a fluffier texture.</li>
-        <li class="instructions-list__item"> Heat the pan: Place a non-stick frying pan over medium heat and add butter or oil.
-        </li>
-        <li class="instructions-list__item">Cook the omelette: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure
+        <li class="instructions-list__item"><span class="text--strong">Heat the pan:</span> Place a non-stick frying pan over medium heat and add butter or oil.</li>
+        <li class="instructions-list__item"><span class="text--strong">Cook the omelette:</span> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure
           the eggs evenly coat the surface.</li>
-        <li class="instructions-list__item">Add fillings (optional): When the eggs begin to set at the edges but are still slightly runny in the
+        <li class="instructions-list__item"><span class="text--strong">Add fillings (optional):</span> When the eggs begin to set at the edges but are still slightly runny in the
           middle, sprinkle your chosen fillings over one half of the omelette.</li>
-        <li class="instructions-list__item">Fold and serve: As the omelette continues to cook, carefully lift one edge and fold it over the
+        <li class="instructions-list__item"><span class="text--strong">Fold and serve:</span> As the omelette continues to cook, carefully lift one edge and fold it over the
           fillings. Let it cook for another minute, then slide it onto a plate.</li>
-        <li class="instructions-list__item">Enjoy: Serve hot, with additional salt and pepper if needed.</li>
+        <li class="instructions-list__item"><span class="text--strong">Enjoy:</span> Serve hot, with additional salt and pepper if needed.</li>
       </ol>
     </section>
     <section class="recipe-card__nutrition-list">
       <h2 class="recipe-card__title--s">Nutrition</h2>
       <p class="recipe-card__text">The table below shows nutritional values per serving without the additional fillings.</p>
       <table class="nutrition-list">
-        <tbody class="nutrition-list--theme">
-          <tr>
-            <td>Calories</td>
-            <td>277kcal</td>
+        <tbody class="nutrition-list--theme nutrition-list--inner">
+          <tr class="nutrition-list__line">
+            <td class="nutrition-list__item">Calories</td>
+            <td class="nutrition-list__value">277kcal</td>
           </tr>
-          <tr>
-            <td>Carbs</td>
-            <td>0g</td>
+          <tr class="nutrition-list__line">
+            <td class="nutrition-list__item">Carbs</td>
+            <td class="nutrition-list__value">0g</td>
           </tr>
-          <tr>
-            <td>Protein</td>
-            <td>20g</td>
+          <tr class="nutrition-list__line">
+            <td class="nutrition-list__item">Protein</td>
+            <td class="nutrition-list__value">20g</td>
           </tr>
-          <tr>
-            <td>Fat</td>
-            <td>22g</td>
+          <tr class="nutrition-list__line">
+            <td class="nutrition-list__item">Fat</td>
+            <td class="nutrition-list__value">22g</td>
           </tr>
         </tbody>
       </table>
     </section>
   </article>
+  </main>
 
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
