@@ -5,7 +5,7 @@
 }
 
 :root {
-    --title-size-large: 2.375rem;
+    --title-size-large: 2rem;
     --title-size-s: 1.75rem;
     --title-size-xs: 1.25rem;
 
@@ -45,7 +45,7 @@ ul, ol {
 
 .recipe-card {
     background-color: var(--card-background-color);
-    border-radius: 0.875rem;
+    border-radius: 1.5rem;
 }
 
 .recipe-card--inner {
@@ -72,6 +72,7 @@ ul, ol {
     font-size: var(--title-size-large);
     color: var(--main-title-color);
     padding-bottom: 1rem;
+    line-height: 100%;
 }
 
 .recipe-card__text {
@@ -177,4 +178,19 @@ ul, ol {
     align-items: center;
     justify-content: left;
     border-bottom: 2px var(--line-color) solid;
+}
+
+@media (max-width: 375px) {
+    .recipe-card--inner {
+        width: 375px;
+        padding: 0;
+    }
+
+    .container {
+       padding: 0 2.25rem 2.25rem 2.25rem; 
+    }
+
+    .recipe-card__cover {
+        border-radius: 0;
+    }
 }
